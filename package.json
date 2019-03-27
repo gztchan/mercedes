@@ -1,18 +1,36 @@
 {
   "name": "mercedes",
   "version": "1.0.0",
-  "description": "Use snippet as your hand.",
-  "main": "lib/main.js",
+  "description": "Use snippet as fast as you can.",
+  "main": "app/main.js",
   "scripts": {
     "build:dev": "NODE_ENV=development electron .",
-    "start": "NODE_ENV=development webpack-dev-server --config ./scripts/webpack/dev.js"
+    "start": "webpack-dev-server --config ./scripts/webpack/dev.js",
+    "rebuild": "electron-rebuild"
   },
-  "author": "",
+  "author": "gztchan",
   "license": "ISC",
+  "build": {
+    "productName": "Mercedes"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.11.0",
+    "css-loader": "^2.1.1",
     "electron": "^4.0.2",
+    "electron-better-ipc": "^0.1.2",
+    "electron-builder": "^20.39.0",
+    "electron-localshortcut": "^3.1.0",
+    "electron-rebuild": "^1.8.4",
+    "electron-reload": "^1.4.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "react-router": "^5.0.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
     "webpack-config": "^7.5.0",
@@ -20,7 +38,17 @@
     "write-file-webpack-plugin": "^4.5.0"
   },
   "dependencies": {
+    "antd": "^3.15.2",
+    "classnames": "^2.2.6",
+    "nedb": "^1.8.0",
+    "pouchdb": "^7.0.0",
+    "pouchdb-find": "^7.0.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^5.0.0",
+    "robotjs": "^0.5.1",
+    "sequelize": "^5.2.12",
+    "sqlite3": "^4.0.6",
+    "umzug": "^2.2.0"
   }
 }

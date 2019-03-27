@@ -8,9 +8,11 @@ const config = new Config().extend(path.resolve(__dirname, './base.js')).merge({
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../../dist'),
-    publicPath: '/dist/',
+    publicPath: '../dist/',
   },
   plugins: [
     new WriteFilePlugin()
   ]
 });
+
+module.exports = config;
