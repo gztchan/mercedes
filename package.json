@@ -21,7 +21,7 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-import": "^1.11.0",
     "css-loader": "^2.1.1",
-    "electron": "^4.0.2",
+    "electron": "^18.3.7",
     "electron-better-ipc": "^0.1.2",
     "electron-builder": "^20.39.0",
     "electron-localshortcut": "^3.1.0",
